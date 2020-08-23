@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 
 class FullScreenPhotoPage extends StatelessWidget {
-  String image;
+  String imgitageUrl;
 
-  FullScreenPhotoPage(this.image);
+  FullScreenPhotoPage(this.imageUrl);
 
   @override
   Widget build(BuildContext context) {
@@ -12,7 +12,7 @@ class FullScreenPhotoPage extends StatelessWidget {
         title: Text("Photo"),
       ),
       body: Container(
-        child: Image.network(image),
+        child: Image.network(imageUrl),
       ),
     );
   }
